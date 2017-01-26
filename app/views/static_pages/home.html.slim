@@ -1,1 +1,28 @@
-h1 Edumersive
+doctype html
+html lang="en"
+  head
+    title= content_for?(:title) ? yield(:title) : "<%= app_name %>"
+  
+  body
+    h1 Edumersive
+
+    ol
+      li= link_to "What is Edumersive", "#"
+      li= link_to "Products", "#"
+      li= link_to "Team", "#"
+      li= link_to "Jobs", "#"
+      li= link_to "We work with", "#"
+      li= link_to "Contact", "#"
+
+    / jumbotron
+
+    ol
+      li What is Edumersive
+      li Architecture
+      li Educative Simulations
+      li Experiences
+
+  footer
+    p Copyright 2016 Edumersive. All Rights Reserved.
+
+
