@@ -1,38 +1,41 @@
 doctype html
 html lang="en"
+
   head
     title= content_for?(:title) ? yield(:title) : "<%= app_name %>"
   
   body
-    h1 Edumersive
+    Edumersive
 
     .navbar
-      li= link_to "What is Edumersive", "#"
-      li= link_to "Products", "#"
-      li= link_to "Team", "#"
-      li= link_to "Jobs", "#"
-      li= link_to "We work with", "#"
-      li= link_to "Contact", "#"
+      li.navbar= link_to "What is Edumersive", "#"
+      li.navbar= link_to "Products", "#"
+      li.navbar= link_to "Team", "#"
+      li.navbar= link_to "Jobs", "#"
+      li.navbar= link_to "We work with", "#"
+      li.navbar= link_to "Contact", "#"
     .navbar
 
-    p Register today
+    / Jumbotron
+    h2 Step into the world of Virtual Reality
+    
+    p Subline to convince people to join our community or activate people to do some sort of action.
 
-    / jumbotron
-      p Step into the world of Virtual Reality
-      p Subline to convince people to join our community or activate people to do some sort of action.
+    button.register-button
+      | Register today
 
     / What is edumersive
       p WHAT IS EDUMERSIVE?
       p EDUMERSIVE develops Virtual Reality concepts.Based on teams all over the world we make super awesome stuff. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.
 
     / ARCHITECTURE
-    li Architecture
+    li.section Architecture
 
     / EDUCATIONAL SIMULATION
-    li Educative Simulations
+    li.section Educative Simulations
 
     / EXPERIENCES
-    li Experiences
+    li.section Experiences
 
     / Meet Edumersive
 
@@ -43,16 +46,16 @@ html lang="en"
     p Are you into Virtual Reality? Connect with us!  Please join our slack group.
 
     Edumersive
-      li Documentation
-      li Terms and Conditions
-      li Privacy Policy
-      li Blog
+      li.footer Documentation
+      li.footer Terms and Conditions
+      li.footer Privacy Policy
+      li.footer Blog
 
     Contact
-      li Contact us
-      li Twitter
-      li FAQ
-      li Community
+      li.footer Contact us
+      li.footer Twitter
+      li.footer FAQ
+      li.footer Community
 
     p Copyright 2016 Edumersive. All Rights Reserved.
 
