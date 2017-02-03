@@ -20,7 +20,21 @@ h2 {
   color: $navy;
 }
 
-p {
+h3 {
+  width: 179px;
+  height: 90px;
+  font-family: Dosis;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: #171544;
+}
+
+.jumbotron-text {
   width: 370px;
   height: 75px;
   font-family: Roboto;
@@ -34,11 +48,40 @@ p {
   color: #333333;
 }
 
-li.section {
-	list-style-type: none;
+.explainer-text {
+  width: 690px;
+  height: 89.7px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #333333;
+}
+
+.navbar-item {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 0 30px 0 0; 
+  color: $navy;
+}
+
+.section-item {
 	margin: 0 30px 0 0;
   width: 175px;
   height: 31px;
+  list-style: none;
   font-family: Dosis;
   font-size: 24px;
   font-weight: bold;
@@ -50,17 +93,6 @@ li.section {
   color: $navy;
 }
 
-li.navbar {
-	font-family: Roboto;
-  font-size: 13px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: $navy;
-}
 
 li.footer {
   font-family: Roboto;

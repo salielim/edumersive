@@ -7,35 +7,41 @@ html lang="en"
   body
     Edumersive
 
-    .navbar
-      li.navbar= link_to "What is Edumersive", "#"
-      li.navbar= link_to "Products", "#"
-      li.navbar= link_to "Team", "#"
-      li.navbar= link_to "Jobs", "#"
-      li.navbar= link_to "We work with", "#"
-      li.navbar= link_to "Contact", "#"
-    .navbar
+    ul.navbar
+      li
+        a.navbar-item href="#" What is Edumersive
+      li.
+        a.navbar-item href="#" Products
+      li.
+        a.navbar-item href="#" Team
+      li.
+        a.navbar-item href="#" Jobs
+      li
+        a.navbar-item href="#" We work with
+      li
+        a.navbar-item href="#" Contact
 
-    / Jumbotron
-    h2 Step into the world of Virtual Reality
-    
-    p Subline to convince people to join our community or activate people to do some sort of action.
+    .jumbotron
+      h2 Step into the world of Virtual Reality
+      
+      .jumbotron-text Subline to convince people to join our community or activate people to do some sort of action.
+      
+      button.register-button
+        | Register today
 
-    button.register-button
-      | Register today
+    .explainer
+      h3 What is Edumersive?
+      .explainer-text EDUMERSIVE develops Virtual Reality concepts. Based on teams all over the world we make super awesome stuff. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.
 
-    / What is edumersive
-      p WHAT IS EDUMERSIVE?
-      p EDUMERSIVE develops Virtual Reality concepts.Based on teams all over the world we make super awesome stuff. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.
+    ul.section
+    li
+      a.section-item href="#" Architecture
 
-    / ARCHITECTURE
-    li.section Architecture
+    li
+      a.section-item href="#" Educative Simulations
 
-    / EDUCATIONAL SIMULATION
-    li.section Educative Simulations
-
-    / EXPERIENCES
-    li.section Experiences
+    li
+      a.section-item href="#" Experiences
 
     / Meet Edumersive
 
