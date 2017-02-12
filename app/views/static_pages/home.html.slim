@@ -1,83 +1,51 @@
 doctype html
 html lang="en"
 
-  head
-    title= content_for?(:title) ? yield(:title) : "<%= app_name %>"
-  
-  body
-    Edumersive
+  title= content_for?(:title) ? yield(:title) : "<%= app_name %>"
 
-    ul.navbar
-      li
-        a.navbar-item href="#" What is Edumersive
-      li.
-        a.navbar-item href="#" Products
-      li.
-        a.navbar-item href="#" Team
-      li.
-        a.navbar-item href="#" Jobs
-      li
-        a.navbar-item href="#" We work with
-      li
-        a.navbar-item href="#" Contact
+  == render 'header'
 
-    .jumbotron
-      h2 Step into the world of Virtual Reality
-      
-      .jumbotron-text Subline to convince people to join our community or activate people to do some sort of action.
-      
-      button.register-button
-        | Register today
+  .jumbotron
+    h2 Step into the world of Virtual Reality
+    
+    .jumbotron-text Subline to convince people to join our community or activate people to do some sort of action.
+    
+    button.register-button
+      | Register today
 
-    .explainer
-      h3 What is Edumersive?
-      .explainer-text EDUMERSIVE develops Virtual Reality concepts. Based on teams all over the world we make super awesome stuff. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.
+  .explainer
+    h3 What is Edumersive?
+    .explainer-text EDUMERSIVE develops Virtual Reality concepts. Based on teams all over the world we make super awesome stuff. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.
 
-    ul.section
-      li
-        a.section-item href="#" Architecture
+  ul.section
+    li
+      a.section-item href="#" Architecture
 
-        .section-text With virtual reality you can buy your next house without even leaving you old one. Create your new living room from your chair.
+      .section-text With virtual reality you can buy your next house without even leaving you old one. Create your new living room from your chair.
 
-        button.section-button
-          | Watch Video
+      button.section-button
+        | Watch Video
 
-      li
-        a.section-item href="#" Educative Simulations
+    li
+      a.section-item href="#" Educative Simulations
 
-        .section-text Overcome your greatest fears - with Virtual Reality you can simulate situations in a safe environment.
+      .section-text Overcome your greatest fears - with Virtual Reality you can simulate situations in a safe environment.
 
-        button.section-button
-          | Explore Simulations
+      button.section-button
+        | Explore Simulations
 
-      li
-        a.section-item href="#" Experiences
+    li
+      a.section-item href="#" Experiences
 
-        .section-text Experience next generation gaming with Virtual Reality. Get drawn into the game and meet your favorite characters.
+      .section-text Experience next generation gaming with Virtual Reality. Get drawn into the game and meet your favorite characters.
 
-        button.section-button
-          | Get Free Demo
-          
-    / Meet Edumersive
+      button.section-button
+        | Get Free Demo
+        
+  / Meet Edumersive
 
-    / We work with
+  / We work with
 
-  footer
-    p Edumersive 
-    p Are you into Virtual Reality? Connect with us!  Please join our slack group.
-
-    Edumersive
-      li.footer Documentation
-      li.footer Terms and Conditions
-      li.footer Privacy Policy
-      li.footer Blog
-
-    Contact
-      li.footer Contact us
-      li.footer Twitter
-      li.footer FAQ
-      li.footer Community
-
-    p Copyright 2016 Edumersive. All Rights Reserved.
+  == render 'footer'
 
 
